@@ -123,9 +123,22 @@ h3, .h3, h2, .h2, h1, .h1, p, .p {
 /*//// img ////*/
 
 .img-profile {
-  width: 80%;
   padding-top: 1em;
   padding-bottom: 2em;
+}
+
+.project-gallery {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.img-project {
+  margin-top: 2rem;
+  max-width: 100%;
+  max-height: 750px;
+  box-shadow: 0px 0px 10px rgba(114, 114, 114, 0.25);
 }
 
 .social-media-icon {
