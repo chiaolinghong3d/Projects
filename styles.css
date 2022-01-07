@@ -3,17 +3,19 @@
 /* This site uses Start Bootstrap - Resume v7.0.4 (https://startbootstrap.com/theme/resume) as a reference */
 
 :root {
-  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  --bs-body-font-family: Muli, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-  --font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  
-  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-size: 1rem;
-  --bs-body-font-weight: 400;
+  --bs-body-font-weight: 300;
   --bs-body-line-height: 1.5;
-  --bs-body-color: #212529;
-  --bs-body-bg: #fff;
+  --font-family: Raleway, san-serif, Arial;
+  --bs-body-color: #333333;
+  --bs-body-bg: #ffffff;
+  --blue: #4A9DEB;
+  --dark-blue: #2377C6;
+  --light-gray: #CAD1D7;
+  --gray: #406280;
+  --dark-gray: #949494;
+  --black: #333333;
+  --white: #ffffff;
 }
 
 *,
@@ -30,7 +32,6 @@
 
 body {
   margin: 0;
-  font-family: var(--bs-body-font-family);
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
@@ -38,6 +39,16 @@ body {
 
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
+}
+
+/*//// Container ////*/
+
+.content-item-container {
+  padding: 5% 15% 5% 15%;
+}
+
+.intro {
+  padding-top: 20%;
 }
 
 /* section line*/
@@ -53,11 +64,90 @@ hr:not([size]) {
 
 /*//// Typography ////*/
 
-h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+h3, .h3, h2, .h2, h1, .h1, p, .p {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-family: var(--font-family);
   font-weight: 700;
   line-height: 1.2;
   color: #343a40;
+}
+
+/*//// Content ////*/
+
+.content-item-container p {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: var(--dark-blue);
+}
+
+.content-item-container h3 {
+  padding-top: 2rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: var(--dark-gray);
+}
+
+/*//// Navbar ////*/
+
+.navbar-dark {
+  background-color: var(--blue);
+}
+
+.navbar h2 {
+  font-weight: 300;
+  font-size: 1.4rem;
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.navbar h3 {
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.navbar h3:hover {
+  color: rgb(217, 238, 245);
+}
+
+/*//// Toggler ////*/
+
+.navbar-dark .navbar-toggler {
+  border: none !important;
+  box-shadow: none !important;
+  outline: none!important;
+}
+
+/*//// img ////*/
+
+.img-profile {
+  width: 80%;
+  padding-top: 1em;
+  padding-bottom: 2em;
+}
+
+.social-media-icon {
+  font-size: 2rem;
+  margin: .5rem;
+}
+
+.tool-icon-list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding-top: 1.5rem;
+  font-size: 2rem;
+  color: var(--gray);
+}
+
+.tool-icon-list svg {
+  margin: .5rem;
+}
+
+/*//// Projects ////*/
+
+.project-item img {
+  padding: 1rem;
 }
