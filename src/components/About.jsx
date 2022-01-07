@@ -4,13 +4,13 @@ import { RiMailSendFill } from 'react-icons/ri';
   
 function About() {
   return (
-    <div className='content-item-container'>
+    <div className='content-item-container' id='about'>
       <div className="intro">
         <h1>Chiaoling <span style={{color: '#2377C6'}}>Hong</span></h1>
         <br /><br />
-        <h3>I am a software engineer who is passionate <br/>about <span style={{color: '#4A9DEB'}}>user-centered design</span>.</h3>
+        <p>I am a software engineer who is passionate <br/>about <span style={{color: '#4A9DEB'}}>user-centered design</span>.</p>
         <br /><br />
-        <h3>clean.<span style={{color: '#4A9DEB'}}>simple</span>.design.</h3>
+        <p>clean.<span style={{color: '#4A9DEB'}}>simple</span>.design.</p>
       </div>
       <div className="social-media-list pt-5">
         <a href='https://github.com/chiaolinghong3d' target='_blank' rel='noopener noreferrer'>
