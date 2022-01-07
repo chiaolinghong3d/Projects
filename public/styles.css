@@ -43,7 +43,11 @@ body {
 /*//// Container ////*/
 
 .content-item-container {
-  padding: 15%;
+  padding: 5% 15% 5% 15%;
+}
+
+.intro {
+  padding-top: 20%;
 }
 
 /* section line*/
@@ -68,6 +72,13 @@ h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   color: #343a40;
 }
 
+.navbar h2 {
+  font-weight: 300;
+  font-size: 1.4rem;
+  color: var(--white);
+  text-transform: uppercase;
+}
+
 .navbar h3 {
   font-weight: 300;
   font-size: 1.2rem;
@@ -75,7 +86,7 @@ h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   text-transform: uppercase;
 }
 
-.content-item-container h2 {
+.content-item-container h3 {
   font-size: 1.4rem;
   font-weight: 300;
   color: var(--dark-blue);

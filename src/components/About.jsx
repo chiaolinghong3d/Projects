@@ -4,15 +4,21 @@ import { BsGithub, BsLinkedin } from 'react-icons/bs';
 function About() {
   return (
     <div className='content-item-container'>
-      <h1>Chiaoling <span style={{color: '#2377C6'}}>Hong</span></h1>
-      <br />
-      <h2>I am a software engineer who is passionate <br/>about user-centered design.</h2>
-      <br />
-      <br />
-      <h2>clean.<span style={{color: '#4A9DEB'}}>simple</span>.design.</h2>
+      <div className="intro">
+        <h1>Chiaoling <span style={{color: '#2377C6'}}>Hong</span></h1>
+        <br />
+        <h3>I am a software engineer who is passionate <br/>about user-centered design.</h3>
+        <br />
+        <br />
+        <h3>clean.<span style={{color: '#4A9DEB'}}>simple</span>.design.</h3>
+      </div>
       <div className="social-media-list pt-5">
-        <BsGithub className='social-media-icon'/>
-        <BsLinkedin className='social-media-icon'/>
+        <a href='https://github.com/chiaolinghong3d' target='_blank' rel='noopener noreferrer'>
+          <BsGithub className='social-media-icon'/>
+        </a>
+        <a href='https://www.linkedin.com/in/chiaolinghong/' target='_blank' rel='noopener noreferrer'>
+          <BsLinkedin className='social-media-icon'/>
+        </a>
       </div>
     </div>
   );
