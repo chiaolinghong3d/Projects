@@ -12,6 +12,7 @@
   --blue: #4A9DEB;
   --dark-blue: #2377C6;
   --light-gray: #CAD1D7;
+  --gray: #406280;
   --dark-gray: #949494;
   --black: #333333;
   --white: #ffffff;
@@ -92,6 +93,13 @@ h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   color: var(--dark-blue);
 }
 
+.content-item-container h4 {
+  padding-top: 2rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: var(--dark-gray);
+}
+
 /*//// Navbar ////*/
 
 .navbar-dark {
@@ -115,5 +123,18 @@ h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 
 .social-media-icon {
   font-size: 2rem;
+  margin: .5rem;
+}
+
+.tool-icon-list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding-top: 1.5rem;
+  font-size: 2rem;
+  color: var(--gray);
+}
+
+.tool-icon-list svg {
   margin: .5rem;
 }

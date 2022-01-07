@@ -7,6 +7,7 @@ function About() {
       <div className="intro">
         <h1>Chiaoling <span style={{color: '#2377C6'}}>Hong</span></h1>
         <br />
+        <br />
         <h3>I am a software engineer who is passionate <br/>about user-centered design.</h3>
         <br />
         <br />
