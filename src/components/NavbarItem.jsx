@@ -4,7 +4,7 @@ function NavbarItem({ href, name }) {
   return (
     <li className='nav-item'>
       <a className='nav-link js-scroll-trigger' href={`#${href}`}>
-        {name}
+        <h3>{name}</h3>
       </a> 
     </li>
   );

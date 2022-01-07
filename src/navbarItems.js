@@ -12,10 +12,6 @@ const navbarItems = [
     href: 'projects',
   },
   {
-    name: 'Education',
-    href: 'education',
-  },
-  {
     name: 'Contact',
     href: 'contact',
   },

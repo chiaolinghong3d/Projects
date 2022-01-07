@@ -6,7 +6,7 @@ function App() {
     <div className='container-fluid'>
       <div className='row min-vh-100 flex-column flex-lg-row'>
         <aside
-          className='col-lg-3 bg-dark'
+          className='col-lg-3 navbar-dark'
         >
           <Navbar />
         </aside>

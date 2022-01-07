@@ -2,7 +2,6 @@ import React from 'react';
 import About from './About';
 import Skills from './Skills';
 import Projects from './Projects';
-import Education from './Education';
 import Contact from './Contact';
 
 function Content() {
@@ -14,7 +13,6 @@ function Content() {
       <About />
       <Skills />
       <Projects />
-      <Education />
       <Contact />
     </div>
   );

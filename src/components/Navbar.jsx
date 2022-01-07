@@ -5,17 +5,17 @@ import navbarItems from '../navbarItems';
 function Navbar() {
   return (
     <nav
-      className='navbar navbar-expand-lg navbar-dark bd-dark flex-lg-column align-items-center py-2 text-center sticky-top'
+      className='navbar navbar-expand-lg flex-lg-column align-items-center py-2 text-center sticky-top'
       id='sideNav'
     >
-      <div className="text-center p-3">
+      <div className="text-center pt-3">
         <a className='navbar-brand js-scroll-trigger' href='#page-top'>
-          <span className='d-block d-lg-none'>Chiaoling Hong</span>
+          <span className='d-block d-lg-none title'><h3>Chiaoling Hong</h3></span>
           <span className='d-none d-lg-block'>
             <img
-              className='img-fluid img-profile rounded-circle mx-auto mb-2 shadow'
-              src={`${process.env.PUBLIC_URL}/img/profile.jpg`}
-              alt='what I look like'
+              className='img-fluid img-profile mx-auto mb-2'
+              src={`${process.env.PUBLIC_URL}/img/profile.png`}
+              alt='profile pic'
             />
           </span>
         </a>
