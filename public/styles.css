@@ -64,13 +64,34 @@ hr:not([size]) {
 
 /*//// Typography ////*/
 
-h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+h3, .h3, h2, .h2, h1, .h1, p, .p {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-family: var(--font-family);
   font-weight: 700;
   line-height: 1.2;
   color: #343a40;
+}
+
+/*//// Content ////*/
+
+.content-item-container p {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: var(--dark-blue);
+}
+
+.content-item-container h3 {
+  padding-top: 2rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: var(--dark-gray);
+}
+
+/*//// Navbar ////*/
+
+.navbar-dark {
+  background-color: var(--blue);
 }
 
 .navbar h2 {
@@ -87,23 +108,8 @@ h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   text-transform: uppercase;
 }
 
-.content-item-container h3 {
-  font-size: 1.4rem;
-  font-weight: 300;
-  color: var(--dark-blue);
-}
-
-.content-item-container h4 {
-  padding-top: 2rem;
-  font-size: 1.2rem;
-  font-weight: 300;
-  color: var(--dark-gray);
-}
-
-/*//// Navbar ////*/
-
-.navbar-dark {
-  background-color: var(--blue);
+.navbar h3:hover {
+  color: rgb(217, 238, 245);
 }
 
 /*//// Toggler ////*/
@@ -113,12 +119,26 @@ h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   box-shadow: none !important;
   outline: none!important;
 }
+
 /*//// img ////*/
 
 .img-profile {
-  width: 80%;
   padding-top: 1em;
   padding-bottom: 2em;
+}
+
+.project-gallery {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.img-project {
+  margin-top: 2rem;
+  max-width: 100%;
+  max-height: 750px;
+  box-shadow: 0px 0px 10px rgba(114, 114, 114, 0.25);
 }
 
 .social-media-icon {
@@ -137,4 +157,10 @@ h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 
 .tool-icon-list svg {
   margin: .5rem;
+}
+
+/*//// Projects ////*/
+
+.project-item img {
+  padding: 1rem;
 }
