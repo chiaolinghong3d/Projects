@@ -7,9 +7,6 @@ import Contact from './Contact';
 function Content() {
   return (
     <div className="container-fluid p-0">
-      <p>
-        Testing testing testing...
-      </p>
       <About />
       <Skills />
       <Projects />

@@ -4,12 +4,13 @@
 
 :root {
   --bs-body-font-size: 1rem;
-  --bs-body-font-weight: 400;
+  --bs-body-font-weight: 300;
   --bs-body-line-height: 1.5;
   --font-family: Raleway, san-serif, Arial;
   --bs-body-color: #333333;
   --bs-body-bg: #ffffff;
   --blue: #4A9DEB;
+  --dark-blue: #2377C6;
   --light-gray: #CAD1D7;
   --dark-gray: #949494;
   --black: #333333;
@@ -37,6 +38,12 @@ body {
 
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
+}
+
+/*//// Container ////*/
+
+.content-item-container {
+  padding: 15%;
 }
 
 /* section line*/
@@ -68,6 +75,14 @@ h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   text-transform: uppercase;
 }
 
+.content-item-container h2 {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: var(--dark-blue);
+}
+
+/*//// Navbar ////*/
+
 .navbar-dark {
   background-color: var(--blue);
 }
@@ -85,4 +100,9 @@ h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   width: 80%;
   padding-top: 1em;
   padding-bottom: 2em;
+}
+
+.social-media-icon {
+  font-size: 2rem;
+  margin: .5rem;
 }
