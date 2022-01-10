@@ -10,12 +10,12 @@ function ProjectLinks({ github, site }) {
           Github Repository
         </a>
       </div>
-      <div className='col-sm-3 col-md-4 d-flex align-items-center'>
+      {site.length === 0 ? null : <div className='col-sm-3 col-md-4 d-flex align-items-center'>
         <BsGlobe2 className='mx-2'/>
         <a href={site} className='blue'>
           Visit Site
         </a>
-      </div>
+      </div>}
     </div>
   );
 }
