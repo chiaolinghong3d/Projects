@@ -3,7 +3,7 @@
 /* This site uses Start Bootstrap - Resume v7.0.4 (https://startbootstrap.com/theme/resume) as a reference */
 
 :root {
-  --bs-body-font-size: 1rem;
+  --bs-body-font-size: 1em;
   --bs-body-font-weight: 300;
   --bs-body-line-height: 1.5;
   --font-family: Raleway, san-serif, Arial;
@@ -38,8 +38,8 @@ body {
 }
 
 .intro-container {
-  height: 600px;
-  padding-top: 100px;
+  display: flex;
+  align-items: center;
 }
 
 /*//// Container ////*/
@@ -76,20 +76,23 @@ h1 {
 
 /* Small devices (landscape phones, 544px and up) */
 @media (min-width: 544px) {  
-  h1 {font-size: 1.8rem;} /*1rem = 16px*/
+  h1 {font-size: 1.8em;} /*1rem = 16px*/
+  h2 {font-size: 1.3em;}
 }
  
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {  
-  h1 {font-size: 1.8rem;} /*1rem = 16px*/
-  h2 {font-size: 1.3rem;}
+  h1 {font-size: 1.8em;} /*1rem = 16px*/
+  h2 {font-size: 1.3em;}
+  /* .intro-container {height: 500px}; */
 }
  
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
-  h1 {font-size: 2rem;} /*1rem = 16px*/
-  h2 {font-size: 1.5rem;}
-  p {font-size: 1.2rem;}
+  h1 {font-size: 2em;} /*1rem = 16px*/
+  h2 {font-size: 1.5em;}
+  p {font-size: 1.2em;}
+  .intro-container {height: 700px};
 }
 
 a {
