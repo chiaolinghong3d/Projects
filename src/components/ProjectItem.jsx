@@ -2,7 +2,7 @@ import React from 'react';
 
 function ProjectItem({name, description, images}) {
   return (
-    <div className='content-item-container project-item'>
+    <div className='project-item'>
       <h2>{name}</h2>
       <p>
         {description}
