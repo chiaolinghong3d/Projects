@@ -11,9 +11,9 @@
   --bs-body-bg: #ffffff;
   --blue: #4A9DEB;
   --dark-blue: #2377C6;
-  --light-gray: #CAD1D7;
-  --gray: #406280;
-  --dark-gray: #949494;
+  --light-gray: #F7F7F7;
+  --gray: #5E5E5E;
+  --dark-gray: #3F3F3F;
   --black: #333333;
   --white: #ffffff;
 }
@@ -32,23 +32,19 @@
 
 body {
   margin: 0;
-  font-size: var(--bs-body-font-size);
-  font-weight: var(--bs-body-font-weight);
-  line-height: var(--bs-body-line-height);
-  color: var(--bs-body-color);
-
-  background-color: var(--bs-body-bg);
+  color: var(--dark-gray);
+  background-color: var(--light-gray);
   -webkit-text-size-adjust: 100%;
+}
+
+.padding {
+  padding-top: 5rem;
 }
 
 /*//// Container ////*/
 
 .content-item-container {
   padding: 5% 15% 5% 15%;
-}
-
-.intro {
-  padding-top: 20%;
 }
 
 /* section line*/
@@ -64,28 +60,45 @@ hr:not([size]) {
 
 /*//// Typography ////*/
 
-h3, .h3, h2, .h2, h1, .h1, p, .p {
+h1, h2, h3, h4, p {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-family: var(--font-family);
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.5rem;
   color: #343a40;
+}
+
+h1 {
+  color: var(--black);
+}
+
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 544px) {  
+  h1 {font-size: 1.8rem;} /*1rem = 16px*/
+}
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+  h1 {font-size: 1.8rem;} /*1rem = 16px*/
+  h2 {font-size: 1.3rem;}
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  h1 {font-size: 2rem;} /*1rem = 16px*/
+  h2 {font-size: 1.5rem;}
+  p {font-size: 1.2rem;}
+}
+
+a {
+  color: var(--black);
 }
 
 /*//// Content ////*/
 
 .content-item-container p {
-  font-size: 1.4rem;
   font-weight: 300;
-  color: var(--dark-blue);
-}
-
-.content-item-container h3 {
-  padding-top: 2rem;
-  font-size: 1.2rem;
-  font-weight: 300;
-  color: var(--dark-gray);
 }
 
 /*//// Navbar ////*/
@@ -122,19 +135,6 @@ h3, .h3, h2, .h2, h1, .h1, p, .p {
 
 /*//// img ////*/
 
-.img-profile {
-  width: 80%;
-  padding-top: 1em;
-  padding-bottom: 2em;
-}
-
-.project-gallery {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: center;
-}
-
 .img-project {
   margin-top: 2rem;
   max-width: 100%;
@@ -164,4 +164,23 @@ h3, .h3, h2, .h2, h1, .h1, p, .p {
 
 .project-item img {
   padding: 1rem;
+}
+
+/*//// Buttons ////*/
+
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-lg {
+  background: var(--blue);
+  width: 12rem;
+  border: none;
+}
+
+.space-evenly {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
 }
