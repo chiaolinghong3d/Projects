@@ -7,7 +7,7 @@ function Projects() {
     <div className='content-item-container project-item' id='projects'>
       <h2 className='text-uppercase pb-3'>projects</h2>
       <div className='content-item-border'>
-        {projectItems.map(({ name, description, techstack, components, github_url, site_url }) => (
+        {projectItems.map(({ name, description, techstack, components, github_url, site_url }) => 
           <ProjectItem
             name={name}
             description={description}
@@ -16,7 +16,7 @@ function Projects() {
             github_url={github_url}
             site_url={site_url}
           />
-        ))}
+        )}
       </div>
     </div>
   );
