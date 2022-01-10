@@ -37,15 +37,15 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
-.intro-container {
+/* .intro-container {
   display: flex;
   align-items: center;
-}
+} */
 
 /*//// Container ////*/
 
 .content-item-container {
-  padding: 5% 15% 5% 15%;
+  padding: 4rem 5rem 3rem 5rem;
 }
 
 /* section line*/
@@ -65,7 +65,7 @@ h1, h2, h3, h4, p {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-family: var(--font-family);
-  font-weight: 700;
+  font-weight: 650;
   line-height: 1.5rem;
   color: #343a40;
 }
@@ -74,25 +74,29 @@ h1 {
   color: var(--black);
 }
 
+/* Extra Small devices (landscape phones, under 544px) */
+@media (min-width: 300px) {  
+  h1 {font-size: 1.5rem;} /*1rem = 16px*/
+  h2 {font-size: 1.3rem;}
+}
+
 /* Small devices (landscape phones, 544px and up) */
 @media (min-width: 544px) {  
-  h1 {font-size: 1.8em;} /*1rem = 16px*/
-  h2 {font-size: 1.3em;}
+  h1 {font-size: 1.5rem;} /*1rem = 16px*/
+  h2 {font-size: 1.3rem;}
 }
  
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {  
-  h1 {font-size: 1.8em;} /*1rem = 16px*/
-  h2 {font-size: 1.3em;}
-  /* .intro-container {height: 500px}; */
+  h1 {font-size: 1.8rem;} /*1rem = 16px*/
+  h2 {font-size: 1.5rem;}
 }
  
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
-  h1 {font-size: 2em;} /*1rem = 16px*/
-  h2 {font-size: 1.5em;}
-  p {font-size: 1.2em;}
-  .intro-container {height: 700px};
+  h1 {font-size: 2rem;} /*1rem = 16px*/
+  h2 {font-size: 1.5rem;}
+  p {font-size: 1.2rem;}
 }
 
 a {
