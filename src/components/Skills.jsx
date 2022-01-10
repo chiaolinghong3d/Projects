@@ -7,7 +7,7 @@ import { SiJavascript, SiMysql, SiPostgresql, SiMongodb, SiAdobephotoshop, SiAdo
 function Skills() {
   return (
     <div className='content-item-container' id='skills'>
-      <h2>Skills</h2>
+      <h2 className='text-uppercase'>skills</h2>
       <div className="tool-icon-list">
         <SiJavascript />
         <FaNodeJs />
