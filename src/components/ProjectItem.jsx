@@ -11,10 +11,10 @@ function ProjectItem({
 }) {
   return (
     <div className='project-item'>
-      <h2>{name}</h2>
+      <h2 className='text-uppercase'>{name}</h2>
       <p>{description}</p>
       <ProjectLinks github={github_url} site={site_url} />
-      <h3>Tech Stack</h3>
+      <h3 className='text-uppercase pt-3'>Tech Stack</h3>
       <p>{techstack}</p>
       {components.map((component) => {
         return (
@@ -22,14 +22,14 @@ function ProjectItem({
             <img
               src={component.image_url}
               alt={`demo of ${component.name}`}
-              className='img-project'
+              className='img-fluid'
             />
-            <h3>{component.name}</h3>
+            <h3 className='text-uppercase pb-3'>{component.name}</h3>
             <ul>
               {component.bullet_points.map((bp) => {
                 return (
                   <li>
-                    <h4>{bp}</h4>
+                    <p>{bp}</p>
                   </li>
                 );
               })}
