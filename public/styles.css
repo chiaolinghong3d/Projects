@@ -3,12 +3,7 @@
 /* This site uses Start Bootstrap - Resume v7.0.4 (https://startbootstrap.com/theme/resume) as a reference */
 
 :root {
-  --bs-body-font-size: 1em;
-  --bs-body-font-weight: 300;
-  --bs-body-line-height: 1.5;
   --font-family: Raleway, san-serif, Arial;
-  --bs-body-color: #333333;
-  --bs-body-bg: #ffffff;
   --blue: #4A9DEB;
   --dark-blue: #2377C6;
   --light-gray: #F7F7F7;
@@ -37,15 +32,18 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
-/* .intro-container {
-  display: flex;
-  align-items: center;
-} */
-
 /*//// Container ////*/
 
 .content-item-container {
-  padding: 4rem 5rem 3rem 5rem;
+  padding: 5rem 8rem 3rem 8rem;
+}
+
+.content-item-border {
+  padding: 2.2rem 1.7rem 2.2rem 1.7rem;
+  background: var(--white);
+  border: 1px solid #e9e9e9;
+  box-shadow: 0px 0px 10px #69696913;
+  border-radius: 15px;
 }
 
 /* section line*/
@@ -66,7 +64,7 @@ h1, h2, h3, h4, p {
   margin-bottom: 0.5rem;
   font-family: var(--font-family);
   font-weight: 650;
-  line-height: 1.5rem;
+  line-height: 1.7rem;
   color: #343a40;
 }
 
@@ -78,25 +76,29 @@ h1 {
 @media (min-width: 300px) {  
   h1 {font-size: 1.5rem;} /*1rem = 16px*/
   h2 {font-size: 1.3rem;}
+  .content-item-container {padding: 3rem 3rem 3rem 3rem;}
 }
 
 /* Small devices (landscape phones, 544px and up) */
 @media (min-width: 544px) {  
   h1 {font-size: 1.5rem;} /*1rem = 16px*/
   h2 {font-size: 1.3rem;}
+  .content-item-container {padding: 3rem 3rem 3rem 3rem;}
 }
  
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {  
   h1 {font-size: 1.8rem;} /*1rem = 16px*/
   h2 {font-size: 1.5rem;}
+  .content-item-container {padding: 3rem 5rem 3rem 5rem;}
 }
  
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
   h1 {font-size: 2rem;} /*1rem = 16px*/
   h2 {font-size: 1.5rem;}
-  p {font-size: 1.2rem;}
+  p {font-size: 1.3rem;}
+  .content-item-container {padding: 5rem 8rem 3rem 8rem;}
 }
 
 a {
@@ -159,7 +161,6 @@ a {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  padding-top: 1.5rem;
   font-size: 2rem;
   color: var(--gray);
 }
@@ -172,6 +173,17 @@ a {
 
 .project-item img {
   padding: 1rem;
+  border: none;
+  box-shadow: none;
+}
+
+.project-item-border {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 2.2rem 2rem 2.2rem 2rem;
+  background: var(--white);
+  border: 1px solid #e9e9e9;
+  box-shadow: 0px 0px 10px #69696913;
 }
 
 /*//// Buttons ////*/
@@ -191,4 +203,11 @@ a {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: nowrap;
+}
+
+/*//// Project Links ////*/
+
+.project-links-container h3 {
+  display: inline-block;
+  color: var(--dark-blue);
 }
