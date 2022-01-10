@@ -7,14 +7,14 @@ function Home() {
   return (
     <div className='content-item-container' id='home'>
       <div className='row align-items-center justify-content-around'>
-        <div className='col-sm-5'>
+        <div className='col-sm-5 d-flex justify-content-center'>
           <img
             className='img-fluid rounded-circle'
             src={`${process.env.PUBLIC_URL}/img/profile.jpg`}
             alt='profile pic'
           />
         </div>
-        <div className='col-sm-6 '>
+        <div className='col-sm-6'>
         <h1><span style={{fontSize: '1.2rem'}}>Hi, I'm </span>Chiaoling</h1>
           <p className='pt-2 '>
             I am a <span style={{ color: "#4A9DEB" }}>frontend developer</span>,
