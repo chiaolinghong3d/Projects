@@ -17,7 +17,7 @@ function Home() {
         <div className='col-sm-6'>
         <h1><span style={{fontSize: '1.2rem'}}>Hi, I'm </span>Chiaoling</h1>
           <p className='pt-2 '>
-            I am a <span style={{ color: "#4A9DEB" }}>frontend developer</span>,
+            I am a <span className='blue'>fullstack developer</span> with a focus in front-end design,
             currently based in Milpitas, CA. I’m passionate in building
             user-centered interactions and open to front-end/full-stack
             positions
