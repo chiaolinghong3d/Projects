@@ -9,7 +9,7 @@ function Home() {
       <div className='row align-items-center justify-content-around'>
         <div className='col-sm-5 d-flex justify-content-center'>
           <img
-            className='img-fluid rounded-circle'
+            className='img-fluid rounded-circle p-3'
             src={`${process.env.PUBLIC_URL}/img/profile.jpg`}
             alt='profile pic'
           />
@@ -24,7 +24,7 @@ function Home() {
           </p>
         </div>
       </div>
-      <div className='row justify-content-around align-items-center gx-5 pt-5'>
+      <div className='row justify-content-around align-items-center gx-4 pt-2'>
         <div className='col-sm-5'>
           <div className='space-evenly mx-3'>
             <a
@@ -51,7 +51,7 @@ function Home() {
             <a
               href='https://52670be7-fb3b-4f6c-8d62-2c6bb22c054b.filesusr.com/ugd/c6dcdd_8d55214f79c94733a028613f08e95275.pdf'
               className='btn btn-primary btn-lg'
-              target='_blank' 
+              target='_blank'
               rel='noopener noreferrer'
               role='button'
             >

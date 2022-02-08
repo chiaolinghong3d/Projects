@@ -4,9 +4,9 @@ import Content from "./components/Content";
 function App() {
   return (
     <div className='container-fluid'>
-      <div className='row min-vh-100 flex-column flex-sm-row'>
+      <div className='row min-vh-100 flex-column flex-lg-row'>
         <aside
-          className='col-sm-1 navbar-dark'
+          className='col-lg-2 navbar-dark'
         >
           <Navbar />
         </aside>

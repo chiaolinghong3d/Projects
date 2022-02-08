@@ -5,7 +5,7 @@ import navbarItems from '../navbarItems';
 function Navbar() {
   return (
     <nav
-      className='navbar navbar-expand-sm flex-sm-column align-items-center py-2 text-center sticky-top'
+      className='navbar navbar-expand-lg flex-lg-column align-items-center py-2 text-center sticky-top'
       id='sideNav'
     >
       <div className="text-center pt-3">
