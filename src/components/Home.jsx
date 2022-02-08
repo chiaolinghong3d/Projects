@@ -51,7 +51,7 @@ function Home() {
             <a
               href='https://52670be7-fb3b-4f6c-8d62-2c6bb22c054b.filesusr.com/ugd/c6dcdd_42b9e9df4ff5420492987cb0effdae5b.pdf'
               className='btn btn-primary btn-lg'
-              target='_blank'
+              target='_blank' 
               rel='noopener noreferrer'
               role='button'
             >
