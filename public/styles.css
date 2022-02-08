@@ -101,6 +101,7 @@ p {
   h3 {font-size: 1.3rem;}
   p {font-size: 1.3rem;}
   .content-item-container {padding: 5rem 8rem 3rem 8rem;}
+  .project-item img {max-height: 50rem; width: fit-content; max-width: 40rem;}
 }
 
 a {
@@ -172,7 +173,6 @@ a {
 
 .project-item img {
   height: 100%;
-  max-height: fit-content;
   border: 1px solid var(--border-gray);
   box-shadow: 0 0 .5rem #7e7e7e13;
 }

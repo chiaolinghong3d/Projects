@@ -18,13 +18,13 @@ function ProjectItem({
       <p className='px-3'>{techstack}</p>
       {components.map((component) => {
         return (
-          <div className='project-item-border row space-evenly align-items-center gx-0'>
+          <div className='project-item-border row flex-nowrap-md space-evenly align-items-center gx-0'>
             <img
               src={component.image_url}
               alt={`demo of ${component.name}`}
               className='img-fluid col-lg-7 px-0'
             />
-            <div className="project-bullet-points col-lg-4">
+            <div className="project-bullet-points col-lg-4 pt-2">
               <h3 className='text-uppercase text-decoration-underline pb-3'>{component.name}</h3>
               <ul>
                 {component.bullet_points.map((bp) => {
