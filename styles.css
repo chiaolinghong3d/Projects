@@ -172,6 +172,7 @@ a {
 
 .project-item img {
   height: 100%;
+  max-height: fit-content;
   border: 1px solid var(--border-gray);
   box-shadow: 0 0 .5rem #7e7e7e13;
 }
