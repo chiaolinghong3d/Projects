@@ -49,7 +49,7 @@ function Home() {
         <div className='col-sm-6 btn-resume'>
           <div className="d-flex justify-content-center">
             <a
-              href='https://f551db05-86ac-487f-bccc-37f0b40d507a.filesusr.com/ugd/c6dcdd_26c131ae17414831b2e2523d1bd77371.pdf'
+              href='https://52670be7-fb3b-4f6c-8d62-2c6bb22c054b.filesusr.com/ugd/c6dcdd_8d55214f79c94733a028613f08e95275.pdf'
               className='btn btn-primary btn-lg'
               target='_blank'
               rel='noopener noreferrer'
